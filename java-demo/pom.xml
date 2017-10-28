@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>javamaven</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>java-demo</artifactId>
+    <packaging>jar</packaging>
+    <version>${example.java-demo.version}</version>
+    <name>java-demo</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <java.encoding>UTF-8</java.encoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <example.common.version>0.1-SNAPSHOT</example.common.version>
+        <example.algorithm.version>0.1-SNAPSHOT</example.algorithm.version>
+        <example.distributed-demo.version>0.1-SNAPSHOT</example.distributed-demo.version>
+        <example.java-demo.version>0.1-SNAPSHOT</example.java-demo.version>
+        <example.mockito-demo.version>0.1-SNAPSHOT</example.mockito-demo.version>
+        <example.netty-demo.version>0.1-SNAPSHOT</example.netty-demo.version>
+        <example.netty-RPC-V1.version>0.1-SNAPSHOT</example.netty-RPC-V1.version>
+        <spring.version>4.2.4.RELEASE</spring.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+        <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <!-- mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+</project>

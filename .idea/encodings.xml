@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="jar://$MAVEN_REPOSITORY$/com/taobao/security/security/3.0-SNAPSHOT/security-3.0-20151026.074741-45-sources.jar!/com/taobao/security/util/SecurityUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/alibaba" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hbase-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java9-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mockito-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-RPC-V1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhihu-crawler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhihu-crawler/src/main/resource/proxies" charset="UTF-8" />
+  </component>
+</project>
