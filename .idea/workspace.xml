@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30053142-f50b-4074-87a5-fe93c8db4679" name="Default" comment="增加Hbase测试代码" />
+    <list default="true" id="30053142-f50b-4074-87a5-fe93c8db4679" name="Default" comment="git init">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/y" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/y.pub" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-demo/target/" />
@@ -1110,7 +1114,7 @@
       <workItem from="1508492928477" duration="1062000" />
       <workItem from="1508512049820" duration="1538000" />
       <workItem from="1509073095466" duration="619000" />
-      <workItem from="1509205738762" duration="154000" />
+      <workItem from="1509205738762" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="增加Hbase测试代码">
       <created>1507861086476</created>
@@ -1162,7 +1166,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268787000" />
+    <option name="totallyTimeSpent" value="268980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
