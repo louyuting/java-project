@@ -221,4 +221,8 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
     public ThreadPoolExecutor getAnswerPageThreadPool() {
         return answerPageThreadPool;
     }
+
+    public static AtomicInteger getParseUserAnswerCount() {
+        return parseUserAnswerCount;
+    }
 }

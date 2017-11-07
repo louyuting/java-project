@@ -19,8 +19,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpRequestBase;
 import org.slf4j.Logger;
 
-import static com.crawl.zhihu.ZhiHuHttpClient.*;
-
 /**
  * 爬取用户回答的答案的Task
  *
@@ -73,7 +71,7 @@ public class UserAnswerTask extends AbstractPageTask{
                     return;
                 }
                 if (zhiHuDao.insertAnswer(cn, answer)){
-                    getParseUserAnswerCount().incrementAndGet();
+                    zhiHuHttpClient.getParseUserAnswerCount().incrementAndGet();
                 } else {
                     logger.error("insert answer fail!, answer={}", answer);
                 }
