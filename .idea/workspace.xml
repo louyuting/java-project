@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30053142-f50b-4074-87a5-fe93c8db4679" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/PicAnswerTask.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/UserAnswerTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm/pom.xml" afterPath="$PROJECT_DIR$/algorithm/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed-demo/pom.xml" afterPath="$PROJECT_DIR$/distributed-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hbase-demo/pom.xml" afterPath="$PROJECT_DIR$/hbase-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-demo/pom.xml" afterPath="$PROJECT_DIR$/java-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-demo/src/main/resource/hbase-site.xml.bak" afterPath="$PROJECT_DIR$/java-demo/src/main/resource/hbase-site.xml.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mockito-demo/pom.xml" afterPath="$PROJECT_DIR$/mockito-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/netty-RPC-V1/pom.xml" afterPath="$PROJECT_DIR$/netty-RPC-V1/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/netty-demo/pom.xml" afterPath="$PROJECT_DIR$/netty-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/netty/cookbook/websocketchat/WebsocketChatClient.html" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/netty/cookbook/websocketchat/WebsocketChatClient.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-demo/pom.xml" afterPath="$PROJECT_DIR$/springboot-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/aop/aop_test_demo2.xml" afterPath="$PROJECT_DIR$/springboot-demo/src/main/resources/aop/aop_test_demo2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/springboot-demo/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/bean.xml" afterPath="$PROJECT_DIR$/springboot-demo/src/main/resources/bean.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/proxy_aop_test.xml" afterPath="$PROJECT_DIR$/springboot-demo/src/main/resources/proxy_aop_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/dependency-reduced-pom.xml" afterPath="$PROJECT_DIR$/zhihu-crawler/dependency-reduced-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/pom.xml" afterPath="$PROJECT_DIR$/zhihu-crawler/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/db/ConnectionManager.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/db/ConnectionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadPoolExecutor.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadPoolExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/ThreadPoolMonitor.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/ThreadPoolMonitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/ZhiHuHttpClient.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/ZhiHuHttpClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDao.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDaoMysqlImpl.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDaoMysqlImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/DetailListPageTask.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/DetailListPageTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/config.properties" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/logback.xml" afterPath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihu-crawler/src/test/java/com/crawl/zhihu/dao/ZhihuDAOTest.java" afterPath="$PROJECT_DIR$/zhihu-crawler/src/test/java/com/crawl/zhihu/dao/ZhihuDAOTest.java" />
-    </list>
+    <list default="true" id="30053142-f50b-4074-87a5-fe93c8db4679" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-demo/target/" />
@@ -77,58 +45,7 @@
     </PATH>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ThreadPoolMonitor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/ThreadPoolMonitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleThreadPoolExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadPoolExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="1429" column="19" lean-forward="false" selection-start-line="1429" selection-start-column="19" selection-end-line="1429" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZhiHuHttpClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/ZhiHuHttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedBlockingQueue.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="409" column="19" lean-forward="false" selection-start-line="409" selection-start-column="19" selection-end-line="409" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -298,8 +215,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="35" />
+    <option name="y" value="23" />
+    <option name="width" value="1645" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1254,7 +1173,7 @@
       <workItem from="1509685504145" duration="5771000" />
       <workItem from="1509945878366" duration="6759000" />
       <workItem from="1510012386362" duration="3635000" />
-      <workItem from="1510029784021" duration="9002000" />
+      <workItem from="1510029784021" duration="9240000" />
     </task>
     <task id="LOCAL-00001" summary="增加Hbase测试代码">
       <created>1507861086476</created>
@@ -1277,7 +1196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509206106386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="zhihu-crawler 优化监控">
+      <created>1510056863770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510056863770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1313,7 +1239,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296315000" />
+    <option name="totallyTimeSpent" value="296553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1329,14 +1255,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25762355" sideWeight="0.49711815" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3659306" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19137749" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27549946" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12561275" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17156863" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14767157" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31861198" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15441176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15441176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1422,7 +1348,8 @@
     <MESSAGE value="增加Hbase测试代码" />
     <MESSAGE value="线程绑定的connection 在线程结束后释放" />
     <MESSAGE value="删除SSH key" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除SSH key" />
+    <MESSAGE value="zhihu-crawler 优化监控" />
+    <option name="LAST_COMMIT_MESSAGE" value="zhihu-crawler 优化监控" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2174,14 +2101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="1429" column="19" lean-forward="false" selection-start-line="1429" selection-start-column="19" selection-end-line="1429" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -2192,8 +2111,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/ThreadPoolMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="1429" column="19" lean-forward="false" selection-start-line="1429" selection-start-column="19" selection-end-line="1429" selection-end-column="19" />
           <folding />
         </state>
       </provider>
