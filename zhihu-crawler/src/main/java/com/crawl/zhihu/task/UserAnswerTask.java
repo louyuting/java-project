@@ -67,9 +67,9 @@ public class UserAnswerTask extends AbstractPageTask{
             if(Config.dbEnable){
                 Connection cn = getConnection();
                 // 判断当前用户是否已经解析过了
-                if(zhiHuDao.isExistUserInAnswer(cn, this.userToken)){
+                /*if(zhiHuDao.isExistUserInAnswer(cn, this.userToken)){
                     return;
-                }
+                }*/
                 if (zhiHuDao.insertAnswer(cn, answer)){
                     zhiHuHttpClient.getParseUserAnswerCount().incrementAndGet();
                 } else {

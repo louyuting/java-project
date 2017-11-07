@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.crawl</groupId>
   <artifactId>zhihu-crawler</artifactId>
-  <threadPoolName>zhihu-crawler</threadPoolName>
+  <name>zhihu-crawler</name>
   <version>1.0.0</version>
   <url>http://maven.apache.org</url>
   <build>

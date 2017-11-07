@@ -12,8 +12,8 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <bean id="user"
           class="com.example.demo.test.aop.demo2.User">
-        <property threadPoolName="id" value="1"/>
-        <property threadPoolName="threadPoolName" value="jack"/>
+        <property name="id" value="1"/>
+        <property name="name" value="jack"/>
     </bean>
 
     <bean id="loginServiceImpl"

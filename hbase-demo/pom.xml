@@ -10,7 +10,7 @@
     <artifactId>hbase-demo</artifactId>
     <packaging>jar</packaging>
 
-    <threadPoolName>hbase-demo</threadPoolName>
+    <name>hbase-demo</name>
     <url>http://maven.apache.org</url>
 
     <properties>

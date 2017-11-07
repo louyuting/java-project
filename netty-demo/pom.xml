@@ -10,7 +10,7 @@
     <artifactId>netty-demo</artifactId>
     <packaging>jar</packaging>
     <version>${example.netty-demo.version}</version>
-    <threadPoolName>netty-demo</threadPoolName>
+    <name>netty-demo</name>
     <url>http://maven.apache.org</url>
 
     <properties>
