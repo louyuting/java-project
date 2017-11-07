@@ -10,7 +10,7 @@
     <artifactId>netty-RPC-V1</artifactId>
     <packaging>jar</packaging>
     <version>${example.netty-RPC-V1.version}</version>
-    <name>netty-RPC-V1</name>
+    <threadPoolName>netty-RPC-V1</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

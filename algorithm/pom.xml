@@ -11,7 +11,7 @@
     <artifactId>algorithm</artifactId>
     <version>${example.algorithm.version}</version>
     <packaging>jar</packaging>
-    <name>algorithm-${example.algorithm.version}</name>
+    <threadPoolName>algorithm-${example.algorithm.version}</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

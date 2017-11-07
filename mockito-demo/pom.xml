@@ -10,7 +10,7 @@
     <artifactId>mockito-demo</artifactId>
     <packaging>jar</packaging>
     <version>${example.mockito-demo.version}</version>
-    <name>mockito-demo</name>
+    <threadPoolName>mockito-demo</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

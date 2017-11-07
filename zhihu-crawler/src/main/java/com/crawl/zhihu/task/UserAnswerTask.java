@@ -1,8 +1,12 @@
 package com.crawl.zhihu.task;
 
+import java.sql.Connection;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
+import com.crawl.core.db.ConnectionManager;
 import com.crawl.core.util.Config;
 import com.crawl.core.util.Constants;
 import com.crawl.zhihu.ZhiHuHttpClient;
@@ -15,6 +19,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpRequestBase;
 import org.slf4j.Logger;
 
+import static com.crawl.zhihu.ZhiHuHttpClient.*;
+
 /**
  * 爬取用户回答的答案的Task
  *
@@ -22,12 +28,19 @@ import org.slf4j.Logger;
  * @email chris.lyt@cainiao.com
  * @date 2017/11/6
  */
-public class PicAnswerTask extends AbstractPageTask{
+public class UserAnswerTask extends AbstractPageTask{
 
     private static Logger logger =  Constants.ZHIHU_LOGGER;
     private String userToken;
 
-    public PicAnswerTask(){
+    /**
+     * <p>Thread-数据库连接对象 的Map</p>
+     * <li>这里维护了一个数据库连接池</li>
+     * <li>里面保存的连接对象数量与线程池里面数量有关系.</li>
+     */
+    private static Map<Thread, Connection> connectionMap = new ConcurrentHashMap<>();
+
+    public UserAnswerTask(){
 
     }
 
@@ -37,14 +50,14 @@ public class PicAnswerTask extends AbstractPageTask{
      * @param proxyFlag
      * @param userToken
      */
-    public PicAnswerTask(HttpRequestBase request, boolean proxyFlag, String userToken){
+    public UserAnswerTask(HttpRequestBase request, boolean proxyFlag, String userToken){
         super(request, proxyFlag);
         this.userToken = userToken;
     }
 
     @Override
     void retry() {
-        zhiHuHttpClient.getAnswerPageThreadPool().execute(new PicAnswerTask(request, true, this.userToken));
+        zhiHuHttpClient.getAnswerPageThreadPool().execute(new UserAnswerTask(request, true, this.userToken));
     }
 
     @Override
@@ -52,9 +65,18 @@ public class PicAnswerTask extends AbstractPageTask{
         DocumentContext dc = JsonPath.parse(page.getHtml());
         List<Answer> answerList = parseAnswers(dc);
         for(Answer answer : answerList){
-            logger.info(answer.toString());
+            logger.info("解析answer成功: "+ answer.toString());
             if(Config.dbEnable){
-                //todo 存入 DB
+                Connection cn = getConnection();
+                // 判断当前用户是否已经解析过了
+                if(zhiHuDao.isExistUserInAnswer(cn, this.userToken)){
+                    return;
+                }
+                if (zhiHuDao.insertAnswer(cn, answer)){
+                    getParseUserAnswerCount().incrementAndGet();
+                } else {
+                    logger.error("insert answer fail!, answer={}", answer);
+                }
             }
         }
         boolean isStart = dc.read("$.paging.is_start");
@@ -64,7 +86,7 @@ public class PicAnswerTask extends AbstractPageTask{
                 String nextUrl = String.format(Constants.USER_ANSWER_URL, userToken, j * 20);
                 HttpRequestBase request = new HttpGet(nextUrl);
                 request.setHeader("authorization", "oauth " + ZhiHuHttpClient.getAuthorization());
-                zhiHuHttpClient.getAnswerPageThreadPool().execute(new PicAnswerTask(request, true, userToken));
+                zhiHuHttpClient.getAnswerPageThreadPool().execute(new UserAnswerTask(request, true, userToken));
             }
         }
 
@@ -110,12 +132,30 @@ public class PicAnswerTask extends AbstractPageTask{
                 answerList.add(answer);
             }
         } catch (Throwable e) {
-            logger.error("com.crawl.zhihu.task.PicAnswerTask.parseAnswers error! param={}", dc.toString());
+            logger.error("com.crawl.zhihu.task.UserAnswerTask.parseAnswers error! param={}", dc.toString());
         }
         return answerList;
     }
 
 
+    /**
+     * 每个thread维护一个Connection
+     * @return
+     */
+    private Connection getConnection(){
+        Thread currentThread = Thread.currentThread();
+        Connection cn = null;
+        if (!connectionMap.containsKey(currentThread)){
+            cn = ConnectionManager.createConnection();
+            connectionMap.put(currentThread, cn);
+        }  else {
+            cn = connectionMap.get(currentThread);
+        }
+        return cn;
+    }
 
+    public static Map<Thread, Connection> getConnectionMap() {
+        return connectionMap;
+    }
 
 }

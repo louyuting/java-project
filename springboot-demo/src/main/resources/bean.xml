@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
 
     <bean id="louyuting-user" class="com.example.demo.test.ioc.User" init-method="myInit" destroy-method="myDestory">
-        <property name="id" value="1234"/>
-        <property name="name" value="louyuting"/>
+        <property threadPoolName="id" value="1234"/>
+        <property threadPoolName="threadPoolName" value="louyuting"/>
     </bean>
 
     <bean id="beanPostProcessor" class="com.example.demo.test.ioc.MyBeanPostProcessor">

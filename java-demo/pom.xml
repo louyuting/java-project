@@ -11,7 +11,7 @@
     <artifactId>java-demo</artifactId>
     <packaging>jar</packaging>
     <version>${example.java-demo.version}</version>
-    <name>java-demo</name>
+    <threadPoolName>java-demo</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

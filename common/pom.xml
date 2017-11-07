@@ -11,7 +11,7 @@
     <artifactId>common</artifactId>
     <version>${example.common.version}</version>
     <packaging>jar</packaging>
-    <name>common-${example.common.version}</name>
+    <threadPoolName>common-${example.common.version}</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

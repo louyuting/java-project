@@ -218,6 +218,20 @@ public class ZhiHuDaoMysqlImpl implements ZhiHuDao {
         return true;
     }
 
+
+    @Override
+    public boolean isExistUserInAnswer(Connection cn, String userToken) {
+        String isContainUserSql = "select count(*) from answer WHERE user_token='" + userToken + "'";
+        try {
+            if(isExistRecord(cn, isContainUserSql)){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     @Override
     public boolean isExistAnswer(Connection cn, Integer answerId) {
         String isContainSql = "select count(*) from answer WHERE answer_id='" + answerId + "'";
@@ -259,6 +273,7 @@ public class ZhiHuDaoMysqlImpl implements ZhiHuDao {
             logger.info("插入数据库成功---" + answer.getQuestionTitle() + "----" +answer.getExcerpt());
         } catch (SQLException e) {
             e.printStackTrace();
+            logger.error("insert answer error, answer={}", answer);
             return false;
         }
         return true;

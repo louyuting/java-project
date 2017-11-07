@@ -7,7 +7,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>zhihu-crawler</name>
+    <threadPoolName>zhihu-crawler</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

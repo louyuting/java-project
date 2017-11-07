@@ -3,21 +3,21 @@
 
     <contextName>zhihu</contextName>
 
-    <property name="log.path" value="/opt/admin/zhihu/logs" />
-    <Property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] -- %logger{80}  %msg%n"/>
-	<property name="log.maxHistory" value="15" />
-	<property name="log.rootLevel" value="INFO" />
-	<property name="log.zhihuLevel" value="INFO" />
+    <property threadPoolName="log.path" value="/opt/admin/zhihu/logs" />
+    <Property threadPoolName="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] -- %logger{80}  %msg%n"/>
+	<property threadPoolName="log.maxHistory" value="15" />
+	<property threadPoolName="log.rootLevel" value="INFO" />
+	<property threadPoolName="log.zhihuLevel" value="INFO" />
 
     <!--输出到控制台-->
-    <appender name="console_logger" class="ch.qos.logback.core.ConsoleAppender">
+    <appender threadPoolName="console_logger" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${log.pattern}</pattern>
         </encoder>
     </appender>
 
     <!--主干日志-->
-    <appender name="zhihu_logger" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender threadPoolName="zhihu_logger" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.path}/zhihu.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${log.path}/zhihu.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -29,7 +29,7 @@
     </appender>
 
 
-    <appender name="monitor_logger" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender threadPoolName="monitor_logger" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.path}/monitor.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${log.path}/monitor.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -45,21 +45,21 @@
         <appender-ref ref="console_logger"/>
     </root>
 
-    <logger name="console" level="DEBUG" additivity="false">
+    <logger threadPoolName="console" level="DEBUG" additivity="false">
         <appender-ref ref="console_logger"/>
     </logger>
 
-    <logger name="zhihu" level="INFO" additivity="false">
+    <logger threadPoolName="zhihu" level="INFO" additivity="false">
         <appender-ref ref="zhihu_logger"/>
         <appender-ref ref="console_logger"/>
     </logger>
 
-    <logger name="monitor" level="DEBUG" additivity="false">
+    <logger threadPoolName="monitor" level="DEBUG" additivity="false">
         <appender-ref ref="monitor_logger"/>
     </logger>
 
-    <!-- 配置这个路径下访问的类的logger name-->
-    <Logger name="com.crawl" level="debug" additivity="false">
+    <!-- 配置这个路径下访问的类的logger threadPoolName-->
+    <Logger threadPoolName="com.crawl" level="debug" additivity="false">
         <appender-ref ref="monitor_logger"/>
     </Logger>
 

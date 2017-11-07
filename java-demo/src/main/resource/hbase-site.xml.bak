@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
   <property>
-    <name>hbase.zookeeper.quorum</name>
+    <threadPoolName>hbase.zookeeper.quorum</threadPoolName>
     <value>example1,example2,example3</value>
     <description>The directory shared by region servers.
     </description>

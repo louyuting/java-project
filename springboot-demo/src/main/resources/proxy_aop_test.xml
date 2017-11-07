@@ -8,13 +8,13 @@
     <bean id="securityInterceptor" class="com.example.demo.test.aopdemo.interceptor.SecurityInterceptor"></bean>
 
     <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
-        <property name="beanNames">
+        <property threadPoolName="beanNames">
             <list>
                 <value>userService</value>
             </list>
         </property>
 
-        <property name="interceptorNames">
+        <property threadPoolName="interceptorNames">
             <list>
                 <value>securityInterceptor</value>
                 <value>loggerBeforeAdvice</value>

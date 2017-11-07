@@ -17,7 +17,7 @@ public class ConnectionManager {
 	private static Logger logger =  Constants.ZHIHU_LOGGER;
 	/** 静态的全局connection对象 */
 	private static Connection conn;
-	public static Connection getConnection(){
+	public static synchronized Connection getConnection(){
 		//获取数据库连接
 		try {
 			if(conn == null || conn.isClosed()){
@@ -31,6 +31,7 @@ public class ConnectionManager {
 		}
 		return conn;
 	}
+
 	static {
 		try {
 			Class.forName("org.gjt.mm.mysql.Driver") ;//加载驱动
@@ -39,6 +40,7 @@ public class ConnectionManager {
 		}
 
 	}
+
 	public static void close(){
 		if(conn != null){
 			//logger.info("关闭连接中");

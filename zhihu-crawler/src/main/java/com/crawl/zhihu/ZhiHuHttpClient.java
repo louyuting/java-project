@@ -20,7 +20,7 @@ import com.crawl.proxy.ProxyHttpClient;
 import com.crawl.zhihu.dao.ZhiHuDaoMysqlImpl;
 import com.crawl.zhihu.task.DetailListPageTask;
 import com.crawl.zhihu.task.GeneralPageTask;
-import com.crawl.zhihu.task.PicAnswerTask;
+import com.crawl.zhihu.task.UserAnswerTask;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpRequestBase;
@@ -33,6 +33,10 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
      * 统计用户数量
      */
     public static AtomicInteger parseUserCount = new AtomicInteger(0);
+    /**
+     * 统计用户answer数量
+     */
+    public static AtomicInteger parseUserAnswerCount = new AtomicInteger(0);
     private static long startTime = System.currentTimeMillis();
     public static volatile boolean isStop = false;
 
@@ -115,7 +119,7 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
         String startUrl = String.format(Constants.USER_ANSWER_URL, userToken, 0);
         HttpRequestBase request = new HttpGet(startUrl);
         request.setHeader("authorization", "oauth " + ZhiHuHttpClient.getAuthorization());
-        answerPageThreadPool.execute(new PicAnswerTask(request, true, userToken));
+        answerPageThreadPool.execute(new UserAnswerTask(request, true, userToken));
     }
 
 
@@ -176,7 +180,7 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
             if (downloadPageCount >= Config.downloadPageCount &&
                     !detailListPageThreadPool.isShutdown()) {
                 isStop = true;
-                ThreadPoolMonitor.isStopMonitor = true;
+                ThreadPoolMonitor.setIsStopMonitor(true);
                 detailListPageThreadPool.shutdown();
             }
             if(detailListPageThreadPool.isTerminated()){

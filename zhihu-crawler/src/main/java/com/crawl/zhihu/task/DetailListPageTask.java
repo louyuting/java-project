@@ -32,8 +32,9 @@ public class DetailListPageTask extends AbstractPageTask {
     private static Logger logger =  Constants.ZHIHU_LOGGER;
     private static ListPageParser proxyUserListPageParser;
     /**
-     * Thread-数据库连接对象
-     * 这里维护了一个数据库连接池
+     * <p>Thread-数据库连接对象 的Map</p>
+     * <li>这里维护了一个数据库连接池</li>
+     * <li>里面保存的连接对象数量与线程池里面数量有关系.</li>
      */
     private static Map<Thread, Connection> connectionMap = new ConcurrentHashMap<>();
     static {

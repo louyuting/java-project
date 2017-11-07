@@ -10,7 +10,7 @@
     <artifactId>distributed-demo</artifactId>
     <packaging>jar</packaging>
     <version>${example.distributed-demo.version}</version>
-    <name>distributed-demo</name>
+    <threadPoolName>distributed-demo</threadPoolName>
     <url>http://maven.apache.org</url>
 
     <properties>

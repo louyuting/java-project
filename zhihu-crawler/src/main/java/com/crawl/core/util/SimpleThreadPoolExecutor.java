@@ -6,8 +6,13 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * <p>线程池的封装</p>
+ */
 public class SimpleThreadPoolExecutor extends ThreadPoolExecutor{
+
     private String threadPoolName;
+
     public SimpleThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime,
                                     TimeUnit unit, BlockingQueue<Runnable> workQueue, String threadPoolName) {
         super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
