@@ -2,6 +2,7 @@ package com.crawl.zhihu.entity;
 
 
 import com.crawl.proxy.entity.Proxy;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Page {
     private String url;
@@ -54,5 +55,10 @@ public class Page {
     @Override
     public int hashCode() {
         return url.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this);
     }
 }

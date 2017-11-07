@@ -1,14 +1,10 @@
 package com.crawl.zhihu.dao;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Properties;
 
-import org.slf4j.Logger;
-
 import com.crawl.core.util.Constants;
-import com.crawl.zhihu.entity.User;
+import org.slf4j.Logger;
 
 /**
  * 数据访问层， hbase实现
@@ -17,7 +13,7 @@ import com.crawl.zhihu.entity.User;
  * @email chris.lyt@cainiao.com
  * @date 2017/10/17
  */
-public class ZhiHuDaoHbaseImpl implements ZhiHuDao {
+public class ZhiHuDaoHbaseImpl{
     private static Logger logger =  Constants.ZHIHU_LOGGER;
 
     /**
@@ -36,40 +32,5 @@ public class ZhiHuDaoHbaseImpl implements ZhiHuDao {
             e.printStackTrace();
         }
 
-    }
-
-    @Override
-    public boolean isExistRecord(String sql) throws SQLException {
-        return false;
-    }
-
-    @Override
-    public boolean isExistRecord(Connection cn, String sql) throws SQLException {
-        return false;
-    }
-
-    @Override
-    public boolean isExistUser(String userToken) {
-        return false;
-    }
-
-    @Override
-    public boolean isExistUser(Connection cn, String userToken) {
-        return false;
-    }
-
-    @Override
-    public boolean insertUser(User user) {
-        return false;
-    }
-
-    @Override
-    public boolean insertUser(Connection cn, User user) {
-        return false;
-    }
-
-    @Override
-    public boolean insertUrl(Connection cn, String md5Url) {
-        return false;
     }
 }

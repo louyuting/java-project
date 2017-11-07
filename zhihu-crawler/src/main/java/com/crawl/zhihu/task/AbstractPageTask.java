@@ -102,7 +102,6 @@ public abstract class AbstractPageTask implements Runnable{
 					 */
 					logger.warn("proxy exception:" + currentProxy.toString());
 				}
-
 			}
 			/**
 			 * 401--不能通过验证

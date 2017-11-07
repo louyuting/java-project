@@ -13,12 +13,6 @@ public interface IHttpClient {
 
     /**
      * 爬虫入口
-     *
-     * @param url
-     */
-    void startCrawl(String url);
-    /**
-     * 爬虫入口
      */
     void startCrawl();
 }

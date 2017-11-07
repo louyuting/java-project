@@ -10,9 +10,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.http.client.methods.HttpGet;
-import org.slf4j.Logger;
-
 import com.crawl.core.httpclient.AbstractHttpClient;
 import com.crawl.core.httpclient.IHttpClient;
 import com.crawl.core.util.Config;
@@ -22,11 +19,15 @@ import com.crawl.core.util.ThreadPoolMonitor;
 import com.crawl.proxy.ProxyHttpClient;
 import com.crawl.zhihu.dao.ZhiHuDaoMysqlImpl;
 import com.crawl.zhihu.task.DetailListPageTask;
-import com.crawl.zhihu.task.DetailPageTask;
 import com.crawl.zhihu.task.GeneralPageTask;
+import com.crawl.zhihu.task.PicAnswerTask;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpRequestBase;
+import org.slf4j.Logger;
 
 public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
-    private static Logger logger =  Constants.MONITOR_LOGGER;
+    private static Logger logger =  Constants.ZHIHU_LOGGER;
     private volatile static ZhiHuHttpClient instance;
     /**
      * 统计用户数量
@@ -46,17 +47,15 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
         return instance;
     }
     /**
-     * 详情页下载线程池
-     */
-    private ThreadPoolExecutor detailPageThreadPool;
-    /**
-     * 列表页下载线程池
-     */
-    private ThreadPoolExecutor listPageThreadPool;
-    /**
      * 详情列表页下载线程池
      */
     private ThreadPoolExecutor detailListPageThreadPool;
+    /**
+     * 答案页下载线程池
+     */
+    private ThreadPoolExecutor answerPageThreadPool;
+
+
     /**
      * request　header
      * 获取列表页时，必须带上
@@ -80,17 +79,6 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
      * 初始化线程池
      */
     private void initThreadPool(){
-        detailPageThreadPool = new SimpleThreadPoolExecutor(Config.downloadThreadSize,
-                Config.downloadThreadSize,
-                0L, TimeUnit.MILLISECONDS,
-                new LinkedBlockingQueue<Runnable>(),
-                "detailPageThreadPool");
-        listPageThreadPool = new SimpleThreadPoolExecutor(50, 80,
-                0L, TimeUnit.MILLISECONDS,
-                new LinkedBlockingQueue<Runnable>(5000),
-                new ThreadPoolExecutor.DiscardPolicy(), "listPageThreadPool");
-        new Thread(new ThreadPoolMonitor(detailPageThreadPool, "DetailPageDownloadThreadPool")).start();
-        new Thread(new ThreadPoolMonitor(listPageThreadPool, "ListPageDownloadThreadPool")).start();
         detailListPageThreadPool = new SimpleThreadPoolExecutor(Config.downloadThreadSize,
                 Config.downloadThreadSize,
                 0L, TimeUnit.MILLISECONDS,
@@ -98,11 +86,6 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
                 new ThreadPoolExecutor.DiscardPolicy(),
                 "detailListPageThreadPool");
         new Thread(new ThreadPoolMonitor(detailListPageThreadPool, "DetailListPageThreadPool")).start();
-    }
-
-    public void startCrawl(String url){
-        detailPageThreadPool.execute(new DetailPageTask(url, Config.isProxy));
-        manageHttpClient();
     }
 
     @Override
@@ -116,6 +99,25 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
         detailListPageThreadPool.execute(new DetailListPageTask(request, Config.isProxy));
         manageHttpClient();
     }
+
+
+    public void startCrawlAnswer(String userToken){
+        answerPageThreadPool = new SimpleThreadPoolExecutor(Config.downloadThreadSize,
+                Config.downloadThreadSize,
+                0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<Runnable>(2000),
+                new ThreadPoolExecutor.DiscardPolicy(),
+                "answerPageThreadPool");
+        new Thread(new ThreadPoolMonitor(answerPageThreadPool, "AnswerPageThreadPool")).start();
+        if(StringUtils.isBlank(authorization)){
+            authorization = initAuthorization();
+        }
+        String startUrl = String.format(Constants.USER_ANSWER_URL, userToken, 0);
+        HttpRequestBase request = new HttpGet(startUrl);
+        request.setHeader("authorization", "oauth " + ZhiHuHttpClient.getAuthorization());
+        answerPageThreadPool.execute(new PicAnswerTask(request, true, userToken));
+    }
+
 
     /**
      * 初始化authorization
@@ -148,7 +150,7 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
         jsPageTask.run();
         jsContent = jsPageTask.getPage().getHtml();
 
-        pattern = Pattern.compile("CLIENT_ALIAS=\"(([0-9]|[a-z])*)\"");
+        pattern = Pattern.compile("oauth\\\"\\),h=\\\"(([0-9]|[a-z])*)\"");
         matcher = pattern.matcher(jsContent);
         if (matcher.find()){
             String authorization = matcher.group(1);
@@ -206,15 +208,13 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
             }
         }
     }
-    public ThreadPoolExecutor getDetailPageThreadPool() {
-        return detailPageThreadPool;
-    }
 
-    public ThreadPoolExecutor getListPageThreadPool() {
-        return listPageThreadPool;
-    }
+
     public ThreadPoolExecutor getDetailListPageThreadPool() {
         return detailListPageThreadPool;
     }
 
+    public ThreadPoolExecutor getAnswerPageThreadPool() {
+        return answerPageThreadPool;
+    }
 }

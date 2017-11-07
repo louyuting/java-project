@@ -14,10 +14,20 @@ public class Constants {
     //知乎首页
     public final static String INDEX_URL = "https://www.zhihu.com";
 
+    //用户关注的人的信息
     public final static String USER_FOLLOWEES_URL = "https://www.zhihu.com/api/v4/members/%s/followees?" +
             "include=data[*].educations,employments,answer_count,business,locations,articles_count,follower_count," +
             "gender,following_count,question_count,voteup_count,thanked_count,is_followed,is_following," +
             "badge[?(type=best_answerer)].topics&offset=%d&limit=20";
+
+    //用户回答问题
+    public final static String USER_ANSWER_URL = "https://www.zhihu.com/api/v4/members/%s/answers?" +
+            "include=data[*].is_normal,admin_closed_comment,reward_info,is_collapsed,annotation_action," +
+            "annotation_detail,collapse_reason,collapsed_by,suggest_edit,comment_count,can_comment,content," +
+            "voteup_count,reshipment_settings,comment_permission,mark_infos,created_time,updated_time,review_info," +
+            "question,excerpt,relationship.is_authorized,voting,is_author,is_thanked,is_nothelp,upvoted_followees;" +
+            "data[*].author.badge[?(type=best_answerer)].topics&offset=%d&limit=20&sort_by=created";
+
     public final static String[] userAgentArray = new String[]{
             "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36",
             "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2623.110 Safari/537.36",
@@ -32,8 +42,10 @@ public class Constants {
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
     };
 
-
+    /**
+     * 日志管理
+     */
     public static Logger ZHIHU_LOGGER = LoggerFactory.getLogger("zhihu");
     public static Logger MONITOR_LOGGER = LoggerFactory.getLogger("monitor");
-    public static Logger CONSOLE_LOGGER = LoggerFactory.getLogger("console");
+    //public static Logger CONSOLE_LOGGER = LoggerFactory.getLogger("console");
 }

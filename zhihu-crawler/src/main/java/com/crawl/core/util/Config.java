@@ -68,6 +68,11 @@ public class Config {
     public static String createUserTable;
 
     /**
+     * 创建 answer表语句
+     */
+    public static String createUserAnswer;
+
+    /**
      * cookie路径
      */
     public static String cookiePath;
@@ -100,6 +105,7 @@ public class Config {
             dbPassword = p.getProperty("db.password");
             createUrlTable = p.getProperty("createUrlTable");
             createUserTable = p.getProperty("createUserTable");
+            createUserAnswer = p.getProperty("createUserAnswer");
         }
     }
 

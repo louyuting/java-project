@@ -1,5 +1,7 @@
 package com.crawl.zhihu.entity;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 /**
  * 知乎用户资料
  */
@@ -177,24 +179,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", userToken='" + userToken + '\'' +
-                ", location='" + location + '\'' +
-                ", business='" + business + '\'' +
-                ", sex='" + sex + '\'' +
-                ", employment='" + employment + '\'' +
-                ", position='" + position + '\'' +
-                ", education='" + education + '\'' +
-                ", url='" + url + '\'' +
-                ", agrees=" + agrees +
-                ", thanks=" + thanks +
-                ", asks=" + asks +
-                ", answers=" + answers +
-                ", posts=" + posts +
-                ", followees=" + followees +
-                ", followers=" + followers +
-                ", hashId='" + hashId + '\'' +
-                '}';
+        return ToStringBuilder.reflectionToString(this);
     }
 }

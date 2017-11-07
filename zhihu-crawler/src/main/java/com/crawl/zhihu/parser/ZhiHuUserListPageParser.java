@@ -29,6 +29,9 @@ public class ZhiHuUserListPageParser implements ListPageParser{
     }
     @Override
     public List<User> parseListPage(Page page) {
+        System.err.println("ZhiHuUserListPageParser");
+
+
         List<User> userList = new ArrayList<>();
         String baseJsonPath = "$.data.length()";
         DocumentContext dc = JsonPath.parse(page.getHtml());

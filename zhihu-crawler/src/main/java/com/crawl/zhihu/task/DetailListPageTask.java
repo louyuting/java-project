@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.crawl.core.dao.ConnectionManager;
+import com.crawl.core.db.ConnectionManager;
 import com.crawl.core.parser.ListPageParser;
 import com.crawl.core.util.Config;
 import com.crawl.core.util.Constants;
@@ -71,6 +71,9 @@ public class DetailListPageTask extends AbstractPageTask {
 
     @Override
     void handle(Page page) {
+
+        System.err.println("DetailListPageTask");
+
         // check 爬虫爬取到的是关注的人用户信息的接口
         if(!page.getHtml().startsWith("{\"paging\"")){
             //代理异常，未能正确返回目标请求数据，丢弃
