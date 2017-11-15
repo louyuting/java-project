@@ -11,8 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/mockito-demo/mockito-demo.iml" filepath="$PROJECT_DIR$/mockito-demo/mockito-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-RPC-V1/netty-RPC-V1.iml" filepath="$PROJECT_DIR$/netty-RPC-V1/netty-RPC-V1.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-demo/netty-demo.iml" filepath="$PROJECT_DIR$/netty-demo/netty-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-demo/springboot-demo.iml" filepath="$PROJECT_DIR$/springboot-demo/springboot-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zhihu-crawler/zhihu-crawler.iml" filepath="$PROJECT_DIR$/zhihu-crawler/zhihu-crawler.iml" />
     </modules>
   </component>
 </project>
