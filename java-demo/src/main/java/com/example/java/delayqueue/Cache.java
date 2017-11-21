@@ -47,7 +47,6 @@ public class Cache<K, V> {
     }
 
     /**
-     * TODO
      *
      * @param args
      * 2014-1-11 上午11:30:36

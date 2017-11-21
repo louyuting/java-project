@@ -2,203 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="152a89de-e6b2-43a8-bc7f-ea157b901f67" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/DelayQueueTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/DelayedItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/forkjoin/ForkJoinTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/priorityqueue/PriorityQueueTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_0_9_28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_0_9_28.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_23_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_5_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_11_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_11_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/Application.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/controller/MainController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/controller/MyRestController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/mapper/PreCheckMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/model/WaybillPrecheckRuleDO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo1/Log.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo1/Singer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo1/SingerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo1/Song.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo2/Log2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo2/LoginServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo2/LoginTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo2/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/Cake.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/Chief.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/ChiefTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/Log.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/Oven.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo3/SpringBeans.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/AppMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/Audience.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/ConfigBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/Performance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/PerformanceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/demo4/annotations/Authority.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aop/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/AopMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/annotation/AuthorityCheck.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/interceptor/LoggerBeforeAdvice.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/interceptor/SecurityInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/service/UserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aopdemo/service/UserServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aware/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aware/AwareConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/aware/AwareService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/ioc/BeanLifeCycleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/ioc/MyBeanFactoryPostProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/ioc/MyBeanPostProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/ioc/MyInstantiationAwareBeanPostProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/ioc/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/schedule/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/schedule/ScheduledService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/schedule/TaskSchedulerConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/taskExecutor/APP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/taskExecutor/AsyncExecutorTaskService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/java/com/example/demo/test/taskExecutor/TaskExecutorConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/aop/aop-test_demo1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/aop/aop_test_demo2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/aop/aop_test_demo3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/bean.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/proxy_aop_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/main/resources/text.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springboot-demo/src/test/java/com/example/demo/ApplicationTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/dependency-reduced-pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/db/ConnectionManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/httpclient/AbstractHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/httpclient/IHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/parser/ListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/parser/Parser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/Config.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/Constants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/HttpClientUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/Md5Util.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleInvocationHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/SimpleThreadPoolExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/core/util/ThreadPoolMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/ProxyHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/ProxyListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/ProxyPool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/entity/Direct.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/entity/Proxy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/site/ProxyListPageParserFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/site/ip181/Ip181ProxyListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/site/ip66/Ip66ProxyListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/site/mimiip/MimiipProxyListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/site/xicidaili/XicidailiProxyListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/task/ProxyPageTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/task/ProxySerializeTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/task/ProxyTestTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/proxy/util/ProxyUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/ModelLogin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/ZhiHuHttpClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDaoHbaseImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/dao/ZhiHuDaoMysqlImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/entity/Answer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/entity/Page.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/entity/Question.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/entity/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/parser/ZhiHuUserListPageParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/AbstractPageTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/DetailListPageTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/GeneralPageTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/UserAnswerTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/img/zhihu-charts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/img/zhihu-crawler-process.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/logback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/main/resource/proxies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/src/test/java/com/crawl/zhihu/dao/ZhihuDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihu-crawler/zhihu-crawler.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-demo/java-demo.iml" afterPath="$PROJECT_DIR$/java-demo/java-demo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java" afterPath="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -243,80 +49,7 @@
     </PATH>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ForkJoinTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java-demo/src/main/java/com/example/java/forkjoin/ForkJoinTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForkJoinPool.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="810" column="40" lean-forward="false" selection-start-line="810" selection-start-column="35" selection-end-line="810" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForkJoinWorkerThread.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinWorkerThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="85" column="33" lean-forward="false" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#9229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractExecutorService.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/AbstractExecutorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForkJoinTask.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="211" column="34" lean-forward="false" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecursiveAction.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/RecursiveAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="164" column="37" lean-forward="false" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecursiveTask.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/RecursiveTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -434,11 +167,11 @@
         <option value="$PROJECT_DIR$/zhihu-crawler/src/main/java/com/crawl/zhihu/task/UserAnswerTask.java" />
         <option value="$PROJECT_DIR$/zhihu-crawler/src/main/resource/config.properties" />
         <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/DelayedItem.java" />
-        <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java" />
         <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/priorityqueue/PriorityQueue.java" />
         <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/priorityqueue/PriorityQueueTest.java" />
         <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/DelayQueueTest.java" />
         <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/forkjoin/ForkJoinTest.java" />
+        <option value="$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java" />
       </list>
     </option>
   </component>
@@ -641,7 +374,7 @@
         <subPane>
           <expand>
             <path>
-              <item name="zhihucrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javamaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="javamaven" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -656,7 +389,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.13000977" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1303,7 +1036,7 @@
       <workItem from="1510029784021" duration="9240000" />
       <workItem from="1510097653006" duration="143000" />
       <workItem from="1510546701154" duration="13576000" />
-      <workItem from="1510636350223" duration="6605000" />
+      <workItem from="1510636350223" duration="6857000" />
     </task>
     <task id="LOCAL-00001" summary="增加Hbase测试代码">
       <created>1507861086476</created>
@@ -1340,7 +1073,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510067084664</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="独立并删除 zhihu  springboot 项目&#10;增加 fork/join、delayQueue、priorityQueue test">
+      <created>1510730660016</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510730660017</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1376,25 +1116,34 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319109000" />
+    <option name="totallyTimeSpent" value="319361000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30914825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25341746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28589264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54994744" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25341746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2849632" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17156863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22242647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2681388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1476,7 +1225,8 @@
     <MESSAGE value="线程绑定的connection 在线程结束后释放" />
     <MESSAGE value="删除SSH key" />
     <MESSAGE value="zhihu-crawler 优化监控" />
-    <option name="LAST_COMMIT_MESSAGE" value="zhihu-crawler 优化监控" />
+    <MESSAGE value="独立并删除 zhihu  springboot 项目&#10;增加 fork/join、delayQueue、priorityQueue test" />
+    <option name="LAST_COMMIT_MESSAGE" value="独立并删除 zhihu  springboot 项目&#10;增加 fork/join、delayQueue、priorityQueue test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1948,18 +1698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#316#322#0" expanded="false" />
-            <element signature="e#387#403#0" expanded="false" />
-            <element signature="e#1648#1665#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/AbstractQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1618">
@@ -2026,6 +1764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-157">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2267,6 +2006,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-demo/src/main/java/com/example/java/delayqueue/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -2320,7 +2067,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>java-demo</last-edited>
+          <last-edited>algorithm</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2345,7 +2092,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Maven: com.101tec:zkclient:0.10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
