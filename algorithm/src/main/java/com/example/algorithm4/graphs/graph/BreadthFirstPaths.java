@@ -1,8 +1,10 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
+
+import com.example.algorithm4.graphs.graph.Graph;
 
 /**
  * 使用广度优先搜索查找图中的路径

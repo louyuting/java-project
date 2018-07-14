@@ -1,4 +1,6 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
+
+import com.example.algorithm4.graphs.graph.Graph;
 
 /**
  * 利用DFS判断无向图是否有环

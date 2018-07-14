@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.digraph;
 
 /**
  * 有向无环图的 拓扑排序

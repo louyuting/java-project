@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
 
 import java.util.Stack;
 

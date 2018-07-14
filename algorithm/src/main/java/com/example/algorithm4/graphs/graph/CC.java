@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
 
 /**
  * 使用DFS找出图中的所有连通分量：

@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
 
 /**
  * <p>DFS 深度优先遍历</p>

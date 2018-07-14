@@ -15,6 +15,6 @@ public interface DefaultMethodTest {
 
     // 接口声明静态方法，并且可以提供实现。
     static void staticMethod(){
-        System.out.println("这是DefaultMethodTest接口里面的一个静态方法");
+        System.out.println("这是 DefaultMethodTest 接口里面的一个静态方法");
     }
 }

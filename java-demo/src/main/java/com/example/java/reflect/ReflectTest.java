@@ -1,14 +1,14 @@
 package com.example.java.reflect;
 
-import com.example.java.reflect.dependency.Parent;
-import com.example.java.reflect.dependency.User;
-import org.junit.Test;
-
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+
+import com.example.java.reflect.dependency.Parent;
+import com.example.java.reflect.dependency.User;
+import org.junit.Test;
 
 /**
  * Created by louyuting on 17/1/15.
@@ -19,6 +19,8 @@ public class ReflectTest extends Parent implements Serializable{
     protected String field2="field2";
     public String field3="field3";
     String field4="field3";
+
+    public static String field5 = "test";
 
     // 获取Class的全路径名
     @Test
@@ -204,8 +206,12 @@ public class ReflectTest extends Parent implements Serializable{
         // 可以直接对 private 的属性赋值
         Field field = clazz.getDeclaredField("proprety");
         field.setAccessible(true);
-        field.set(obj, "Java反射机制");
+        field.set(obj, "Java反射机制-------------");
         System.out.println("proprety="+field.get(obj));
+
+        Field field5 = clazz.getDeclaredField("field5");
+        field5.set(null, "field5-static");
+        System.out.println("static field5="+ field5.get(null));
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.digraph;
 
 /**
  * 有向图的深度优先遍历

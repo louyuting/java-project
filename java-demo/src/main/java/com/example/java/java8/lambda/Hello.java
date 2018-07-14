@@ -5,9 +5,9 @@ package com.example.java.java8.lambda;
  * Created by louyuting on 2017/6/19.
  */
 public class Hello {
-    Runnable r1 = () -> { System.out.println(this); };
-    Runnable r2 = () -> { System.out.println(toString()); };
-    Runnable r3 = () -> { System.out.println("hello world 3"); };
+    Runnable r1 = () -> System.out.println(this);
+    Runnable r2 = () -> System.out.println(toString());
+    Runnable r3 = () -> System.out.println("hello world 3");
 
     public String toString() {  return "Hello, world"; }
 

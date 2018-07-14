@@ -4,11 +4,14 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
+ * 不包含虚拟节点的一致性哈希算法
+ *
  * Created by louyuting on 17/1/6.
  */
 public class ConsistentHashingWithoutVirtualNode {
 
-    private static String[] servers = {"192.168.0.0:8011","192.168.0.1:8011","192.168.0.2:8011","192.168.0.3:8011","192.168.0.4:8011"};
+    private static String[] servers = {"192.168.0.0:8011","192.168.0.1:8011","192.168.0.2:8011",
+                                        "192.168.0.3:8011","192.168.0.4:8011"};
 
     private static SortedMap<Integer, String> sortedMap = new TreeMap<>();
 
@@ -21,6 +24,11 @@ public class ConsistentHashingWithoutVirtualNode {
         System.out.println();
     }
 
+    /**
+     * 一种哈希生成算法
+     * @param str
+     * @return
+     */
     private static int getHash(String str)
     {
         final int p = 16777619;

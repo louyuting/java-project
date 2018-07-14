@@ -20,6 +20,8 @@ public class HashTest {
         int hash = (int)2166136261L;
         for (int i = 0; i < str.length(); i++)
             hash = (hash ^ str.charAt(i)) * p;
+        // 哈希算法的测试
+        System.out.println();
         hash += hash << 13;
         hash ^= hash >> 7;
         hash += hash << 3;

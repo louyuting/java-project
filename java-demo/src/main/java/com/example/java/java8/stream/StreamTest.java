@@ -1,12 +1,12 @@
 package com.example.java.java8.stream;
 
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
+
+import org.junit.Test;
 
 /**
  * description 流的测试代码，简介如下：
@@ -46,10 +46,14 @@ public class StreamTest {
     @Test
     public void test1(){
         List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
-        List<String> res = strings.stream().filter(a -> a != null && !a.isEmpty()).collect(Collectors.toList());
+        List<String> res = strings.stream()
+                                  .filter(a -> a != null && !a.isEmpty())
+                                  .collect(Collectors.toList());
         System.out.println(res);
 
-        List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
+        List<String> filtered = strings.stream()
+                                       .filter(string -> !string.isEmpty())
+                                       .collect(Collectors.toList());
         System.out.println(filtered);
     }
 

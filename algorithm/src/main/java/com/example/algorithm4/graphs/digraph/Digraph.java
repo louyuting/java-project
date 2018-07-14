@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.digraph;
 
 import edu.princeton.cs.algs4.Bag;
 

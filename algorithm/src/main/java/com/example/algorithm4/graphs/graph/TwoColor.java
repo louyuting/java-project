@@ -1,4 +1,4 @@
-package com.example.algorithm4.graphs;
+package com.example.algorithm4.graphs.graph;
 
 /**
  * DFS判断无向图是否是双色环
