@@ -3,7 +3,8 @@ package com.example.jianzhioffer;
 /**
  * Created by louyuting on 2017/2/20.
  * 面试题4-- 替换空格
- *      将字符串中每个空格替换成 %20 例如输入We are happy  就输出We%20are%20happy
+ *      将字符串中每个空格替换成 %20 例如输入We are happy就输出We%20are%20happy
+ * 时间复杂度 O(n)
  */
 public class Question4 {
 
@@ -43,15 +44,10 @@ public class Question4 {
                 res[j--] = strc[i];
             }
         }
-
-
         return new String(res);
     }
 
-
     public static void main(String[] args) {
-
-
         String flag = func(new StringBuffer("we are happy"));
         System.out.println(flag);
     }

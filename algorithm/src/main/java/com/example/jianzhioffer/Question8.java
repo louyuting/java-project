@@ -8,16 +8,13 @@ package com.example.jianzhioffer;
 public class Question8 {
 
     public static Integer func(int[] a, int start, int end){
-
         //鲁棒性
         if(a == null || a.length==0 || start<0 || end>=a.length || start>end){
             new Exception("error");
             return null;
         }
-
         //本身就是有序
         if(a[end] > a[start]){
-
             return a[start];
         }
         // 特殊情况2

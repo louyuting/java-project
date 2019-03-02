@@ -5,13 +5,14 @@ import java.util.Queue;
 
 /**
  * Created by louyuting on 2017/2/20.
- * 面试题7-- 用两个队列实现栈
+ * Implement a stack with two queue.
+ * solution: keep one queue empty
  */
-public class Question7_2 {
+public class Question7_extension {
     private static Queue<Integer> queue1 = new LinkedList<>();//入队
     private static Queue<Integer> queue2 = new LinkedList<Integer>();//出队
 
-    //入栈
+    //push stack
     public static void push(int node) {
 
         if(queue1.isEmpty()){
@@ -45,17 +46,17 @@ public class Question7_2 {
 
     public static void main(String[] args) {
         for(int i=0; i<5; i++){
-            Question7_2.push(i);
+            Question7_extension.push(i);
         }
         for(int i=0; i<5; i++){
-            System.out.println(Question7_2.pop());
+            System.out.println(Question7_extension.pop());
         }
 
         for(int i=5; i<10; i++){
-            Question7_2.push(i);
+            Question7_extension.push(i);
         }
         for(int i=5; i<10; i++){
-            System.out.println(Question7_2.pop());
+            System.out.println(Question7_extension.pop());
         }
     }
 

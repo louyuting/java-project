@@ -39,6 +39,4 @@ public class Question7 {
             System.out.println(Question7.pop());
         }
     }
-
-
 }
