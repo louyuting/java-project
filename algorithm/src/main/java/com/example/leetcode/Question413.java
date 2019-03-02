@@ -9,7 +9,7 @@ import com.example.utils.LogUtil;
  */
 public class Question413 {
 
-    public static int numberOfArithmeticSlices(int[] A) {
+    private static int numberOfArithmeticSlices(int[] A) {
         int curr=0;//每次计数的保存值
         int sum=0;//计数最后总的序列个数
 

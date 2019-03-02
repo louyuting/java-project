@@ -69,6 +69,7 @@ public class Question146_LRUCache {
             // 如果缓存存在， 就要从逻辑上将当前结点移动到tail后面
             logicMoveNode(node);
         }
+        System.out.println();
         return node.value;
     }
 
